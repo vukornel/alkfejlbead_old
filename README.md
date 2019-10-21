@@ -13,6 +13,17 @@ Funkcionális és nem funkcionális követelmények:
   - Backend: Spring Boot keretrendszer 
   - Frontend: Angular
   
+Szemantikus URL-k.
+Végpontok:
+GET /: főoldal
+GET /drink/beers: sörök listázása
+GET /drink/wines: borok listázása
+GET /storage/storages: összes tárolt adat
+GET /drink/delete/{drink}: A paramétereknek megfelelő italt törli az adatbázisból, ha létezik.
+GET /drink/find/{drink}: A paramétereknek megfelelő italt megkeresi és kilistázza az adatait, ha létezi.
+POST /drink/{drink}/edit: A paramétereknek megfelelő ital megadott adatait módosítja, ha létezik.
+POST /drink/create/{drink}: A paramétereknek megfelelő italt létrehozza és eltárolja az adatbázisban.
+  
 ![alt text](https://github.com/vukornel/alkfejlbead/blob/master/src/main/resources/kep1.png)
 
 Szerepkörök:
