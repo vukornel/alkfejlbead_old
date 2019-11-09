@@ -22,4 +22,16 @@ public class BeerService {
         return beerRepository.findAll();
     }
 
+    public Beer findBeerById(Long id){
+        return beerRepository.findBeerById(id);
+    }
+
+    public void deleteBeer(Beer b){
+        beerRepository.delete(b);
+    }
+
+    public void saveBeer(Beer b){
+        beerRepository.save(b);
+    }
+
 }

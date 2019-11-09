@@ -21,4 +21,8 @@ public class StorageService {
         return storageRepository.findAll();
     }
 
+    public Storage findStorageById(Long id){
+        return storageRepository.findStorageById(id);
+    }
+
 }

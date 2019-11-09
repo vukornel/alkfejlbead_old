@@ -11,4 +11,9 @@ public interface WineRepository extends JpaRepository<Wine, Long> {
 
     @Override
     List<Wine> findAll();
+
+    @Override
+    void delete(Wine wine);
+
+    Wine findWineById(Long id);
 }

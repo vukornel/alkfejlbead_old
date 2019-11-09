@@ -21,4 +21,16 @@ public class WineService {
         return wineRepository.findAll();
     }
 
+    public Wine findWineById(Long id){
+        return wineRepository.findWineById(id);
+    }
+
+    public void deleteWine(Wine w){
+        wineRepository.delete(w);
+    }
+
+    public void saveWine(Wine w){
+        wineRepository.save(w);
+    }
+
 }

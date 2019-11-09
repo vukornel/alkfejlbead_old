@@ -11,4 +11,7 @@ public interface StorageRepository extends JpaRepository<Storage, Long> {
 
     @Override
     List<Storage> findAll();
+
+    Storage findStorageById(Long id);
+
 }

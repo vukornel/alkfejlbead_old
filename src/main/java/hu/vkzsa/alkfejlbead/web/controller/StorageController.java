@@ -24,6 +24,4 @@ public class StorageController {
     List<Storage> storages(){
         return storageService.findAllStorages();
     }
-
-
 }
